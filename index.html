@@ -30,21 +30,21 @@
                 <div class="left-forms">
                     <label for="first_name">First Name</label>
                     <form action="example.com/path" method="post">
-                        <input type="text" class="text-input" placeholder="John..." name="first_name">
+                        <input type="text" minlength=2 class="text-input" placeholder="John..." name="first_name">
                     </form>
                     <label for="last_name">Last Name</label>
                     <form action="example.com/path" method="post">
-                        <input type="text" class="text-input" placeholder="Doe..." name="last_name">
+                        <input type="text" minlength=2 class="text-input" placeholder="Doe..." name="last_name">
                     </form>
-                    <label for="email">Email Name</label>
+                    <label for="email">Email</label>
                     <form action="example.com/path" method="post">
-                        <input type="text" class="text-input" placeholder="xxx@zzz.com" name="email">
+                        <input type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="text-input" placeholder="xxx@zzz.com" name="email">
                     </form>
                 </div>
                 <div class="right-forms">
                     <label for="phone-number">Phone Number</label>
                     <form action="example.com/path" method="post">
-                        <input type="text" class="text-input" pattern="[789][0-9]{9}"  placeholder="XXX-XXX-XXXX" name="phone-number">
+                        <input type="text" class="text-input" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"  placeholder="XXX-XXX-XXXX" name="phone-number">
                     </form>
                     <label for="password">Password</label>
                     <form action="example.com/path" method="post">
