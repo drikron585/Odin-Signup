@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Practice</title>
+</head>
+
+<body>
+    <div class="left-half">
+        <div class="logo-banner">
+            <img id="odin-image" src="images/odin-lined.png" alt="odin logo">
+            ODIN
+        </div>
+        <p class="photo-credits">Photo by Halie West on Unsplash</p>
+    </div>
+    <div class="right-half">
+        <div class="signup-info">
+            <p>This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form">
+            <p id="form-header">Let's do this!</p>
+            <div class="form-proper">
+                <div class="left-forms">
+                    <label for="first_name">First Name</label>
+                    <form action="example.com/path" method="post">
+                        <input type="text" class="text-input" placeholder="John..." name="first_name">
+                    </form>
+                    <label for="last_name">Last Name</label>
+                    <form action="example.com/path" method="post">
+                        <input type="text" class="text-input" placeholder="Doe..." name="last_name">
+                    </form>
+                    <label for="email">Email Name</label>
+                    <form action="example.com/path" method="post">
+                        <input type="text" class="text-input" placeholder="xxx@zzz.com" name="email">
+                    </form>
+                </div>
+                <div class="right-forms">
+                    <label for="phone-number">Phone Number</label>
+                    <form action="example.com/path" method="post">
+                        <input type="text" class="text-input" pattern="[789][0-9]{9}"  placeholder="XXX-XXX-XXXX" name="phone-number">
+                    </form>
+                    <label for="password">Password</label>
+                    <form action="example.com/path" method="post">
+                        <input type="password" minlength=6 maxlength=20 class="text-input" name="password">
+                    </form>
+                    <label for="password-confirm">Password Confirmation</label>
+                    <form action="example.com/path" method="post">
+                        <input type="password" minlength=6 maxlength=20 class="text-input" name="password-confirm">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="signup-confirm">
+            <button id="create-account-button" type="submit">Create Account</button>
+            <p>Already have an account?
+                <a href="https://www.google.ca">Log In</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
